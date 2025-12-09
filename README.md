@@ -30,17 +30,12 @@ The pipeline runs daily and performs:
 
 ## 🧱 Architecture
 
-          Airflow DAG
-              │
-      ┌───────┴────────┐
-      │                │
- Extract Task     Transform Task (Spark)
-      │                │
-      └───────┬────────┘
-              ▼
-         Load Task
-              │
-        Snowflake Table
+flowchart TD
+    A[Airflow DAG] --> B[Extract Task]
+    A --> C[Transform Task (Spark)]
+    B --> D[Load Task]
+    C --> D
+    D --> E[Snowflake Table]
 
 ## 📁 Repository Structure
 
