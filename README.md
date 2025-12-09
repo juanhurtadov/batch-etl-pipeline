@@ -30,8 +30,34 @@ The pipeline runs daily and performs:
 
 ## 🧱 Architecture
 
-      Airflow DAG
-          │
-  ┌───────┴────────┐
-  │                │
-Extract Task Transform Task (Spark)
+          Airflow DAG
+              │
+      ┌───────┴────────┐
+      │                │
+ Extract Task     Transform Task (Spark)
+      │                │
+      └───────┬────────┘
+              ▼
+         Load Task
+              │
+        Snowflake Table
+
+## 📁 Repository Structure
+
+batch-etl-pipeline/
+├── dags/
+├── spark_jobs/
+├── sql/
+├── config/
+├── data/
+├── notebooks/
+├── docker/
+└── README.md
+
+## 🔧 Tech Stack
+
+- **Airflow** — Scheduling, orchestration  
+- **PySpark** — Scalable transformations  
+- **Snowflake** — Cloud data warehouse  
+- **Docker** — Local Airflow environment  
+- **Python / SQL**  
