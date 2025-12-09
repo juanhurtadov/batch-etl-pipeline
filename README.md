@@ -3,7 +3,7 @@ DE project
 
 # Batch ETL Pipeline (Airflow + PySpark + Snowflake)
 
-## 🚀 Overview
+## Overview
 This project implements a production-style Batch ETL pipeline using:
 
 - **Apache Airflow** for orchestration  
@@ -28,7 +28,7 @@ The pipeline runs daily and performs:
 
 ---
 
-## 🧱 Architecture
+## Architecture
 
           Airflow DAG
               │
@@ -42,7 +42,7 @@ The pipeline runs daily and performs:
               │
         Snowflake Table
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```text
 batch-etl-pipeline/
@@ -76,7 +76,7 @@ batch-etl-pipeline/
 └── README.md
 ```
 
-## 🔧 Tech Stack
+## Tech Stack
 
 - **Airflow** — Scheduling, orchestration  
 - **PySpark** — Scalable transformations  
