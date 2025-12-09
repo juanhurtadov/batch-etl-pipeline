@@ -34,7 +34,7 @@ The pipeline runs daily and performs:
               │
       ┌───────┴────────┐
       │                │
- Extract Task     Transform Task (Spark)
+      Extract Task     Transform Task (Spark)
       │                │
       └───────┬────────┘
               ▼
@@ -45,14 +45,14 @@ The pipeline runs daily and performs:
 ## 📁 Repository Structure
 
 batch-etl-pipeline/
-├── dags/
-├── spark_jobs/
-├── sql/
-├── config/
-├── data/
-├── notebooks/
-├── docker/
-└── README.md
+    ├── dags/
+    ├── spark_jobs/
+    ├── sql/
+    ├── config/
+    ├── data/
+    ├── notebooks/
+    ├── docker/
+    └── README.md
 
 ## 🔧 Tech Stack
 
