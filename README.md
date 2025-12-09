@@ -45,14 +45,35 @@ The pipeline runs daily and performs:
 ## 📁 Repository Structure
 
 batch-etl-pipeline/
-    ├── dags/
-    ├── spark_jobs/
-    ├── sql/
-    ├── config/
-    ├── data/
-    ├── notebooks/
-    ├── docker/
-    └── README.md
+│
+├── dags/
+│   └── batch_etl_dag.py
+│
+├── spark_jobs/
+│   ├── extract_data.py
+│   └── transform_data.py
+│
+├── sql/
+│   ├── create_tables.sql
+│   └── load_to_snowflake.sql
+│
+├── config/
+│   ├── airflow_variables.json
+│   └── snowflake_config.json
+│
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── notebooks/
+│   └── eda.ipynb
+│
+├── docker/
+│   ├── Dockerfile
+│   └── docker-compose.yml
+│
+└── README.md
+
 
 ## 🔧 Tech Stack
 
