@@ -30,22 +30,18 @@ The pipeline runs daily and performs:
 
 ## 🧱 Architecture
 
-markdown
-Copy code
       Airflow DAG
           │
   ┌───────┴────────┐
   │                │
-Extract Task Transform Task (Spark)
-│ │
-└───────┬────────┘
-▼
-Load Task
-│
-Snowflake Table
+  Extract Task Transform Task (Spark)
+  │                │
+  └───────┬────────┘
+          ▼
+       Load Task
+          │
+    Snowflake Table
 
-yaml
-Copy code
 
 ---
 
@@ -67,9 +63,6 @@ batch-etl-pipeline/
 ├── data/
 │ ├── raw/
 │ └── processed/
-
-yaml
-Copy code
 
 ---
 
