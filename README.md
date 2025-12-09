@@ -44,6 +44,7 @@ The pipeline runs daily and performs:
 
 ## 📁 Repository Structure
 
+```text
 batch-etl-pipeline/
 │
 ├── dags/
@@ -73,7 +74,7 @@ batch-etl-pipeline/
 │   └── docker-compose.yml
 │
 └── README.md
-
+```
 
 ## 🔧 Tech Stack
 
